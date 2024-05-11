@@ -15,4 +15,6 @@ message(${myList})
     vectors and can also be adjustet on element bases.  
 ]=]
 
+message(WARNING "That is a small warning you get during processing!")
 message("The end was reached!")
+

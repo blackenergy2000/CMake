@@ -31,5 +31,12 @@ endforeach()
 set(l1 "one;two;three;four")
 set(l2 "1;2;3;4;5")
 foreach(num IN ZIP_LISTS l1 l2)
-    message("num_0 = ${num_0}, num_1 = ${num_1}")    
+    message("num_0 = ${num_0}, num_1 = ${num_1}")
 endforeach()
+
+message("\nNow via seperated variables!\n")
+
+foreach (word num IN ZIP_LISTS l1 l2)
+    message("word=${word}, num=${num}")
+endforeach()
+
