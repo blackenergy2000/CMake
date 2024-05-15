@@ -10,7 +10,7 @@ if(ipo_supported)
     set(CMAKE_INTERPROCEDURAL_OPTIMIZATION True)
 endif ()
 
-add_executable(Rental main.cpp)
+message("Used Build-System: " ${CMAKE_GENERATOR})
+message("Used C++-Compiler: " ${CMAKE_CXX_COMPILER})
 
-add_subdirectory(cars)
-target_link_libraries(Rental PRIVATE cars)
+add_executable(First_Project main.cpp)
