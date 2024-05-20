@@ -11,7 +11,11 @@ class ExampleClass {
 
 public:
     ExampleClass() {
-        std::cout << "Class was constructed!";
+        std::cout << "Class was constructed!" << std::endl;
+    }
+
+    ~ExampleClass() {
+        std::cout << "Object was destructed!" << std::endl;
     }
 };
 
